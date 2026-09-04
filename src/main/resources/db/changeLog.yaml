@@ -1,0 +1,152 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: victor-arcon
+      changes:
+        - createTable:
+            tableName: S_GKD
+            columns:
+              - column:
+                  name: GKD_ID
+                  type: NUMBER(12)
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: KURZ_BEZNG
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: LANG_BEZNG
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DGBDAT
+                  type: DATE
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DGEDAT
+                  type: DATE
+                  constraints:
+                    nullable: false
+              - column:
+                  name: GKD_NR
+                  type: NUMBER(4)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: VS_DRUCK_TXT
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DKBDAT
+                  type: DATE
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DKEDAT
+                  type: DATE
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DKBB
+                  type: NUMBER(12)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DKEB
+                  type: NUMBER(12)
+              - column:
+                  name: AS_KLMR_ID
+                  type: NUMBER(12)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DHLN
+                  type: NUMBER(12)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DGEUB
+                  type: NUMBER(12)
+              - column:
+                  name: DGEUDAT
+                  type: DATE
+        - createTable:
+            tableName: H_GKD
+            columns:
+              - column:
+                  name: GKD_ID
+                  type: NUMBER(12)
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: KURZ_BEZNG
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: LANG_BEZNG
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DGBDAT
+                  type: DATE
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DGEDAT
+                  type: DATE
+                  constraints:
+                    nullable: false
+              - column:
+                  name: GKD_NR
+                  type: NUMBER(4)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: VS_DRUCK_TXT
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DKBDAT
+                  type: DATE
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DKEDAT
+                  type: DATE
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DKBB
+                  type: NUMBER(12)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DKEB
+                  type: NUMBER(12)
+              - column:
+                  name: AS_KLMR_ID
+                  type: NUMBER(12)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DHLN
+                  type: NUMBER(12)
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: DGEUB
+                  type: NUMBER(12)
+              - column:
+                  name: DGEUDAT
+                  type: DATE
